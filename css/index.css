@@ -1,0 +1,99 @@
+*{
+  margin: 0px;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-smoothing: grayscale;
+}
+
+body {
+  font-family: 'Spectral', serif;
+  text-align: center;
+  color: #EBF1FB;
+  background: url(../img/background-image.jpg) no-repeat center/cover;
+
+  height: 100vh;
+
+  display: grid;
+  place-content: center;
+  
+}
+
+h1 {
+  font-family: 'Beth Ellen', cursive;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 120px;
+}
+
+h1 span {
+  color: #5EEAD4;
+}
+
+p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 72px;;
+}
+
+a {
+  color: #EBF1FB;
+  padding: 16px 32px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+a:hover,
+.btn-primary{
+  background: #5EEAD4;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #0B0C0E;
+}
+
+.menu-lateral{
+  background-color: transparent;
+  position: fixed;
+  width: 11%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  
+}
+
+.menu-lateral a{
+  padding: 0px;
+  margin: 0px;
+  height: 120px;
+  width: 100%;
+
+  transition: 0.3s ease-in-out;
+
+  opacity: .7;
+}
+
+.menu-lateral.direito{
+  top: 0;
+  right: 0;
+}
+
+.menu-lateral.esquerdo{
+  top: 0;
+  left: 0;
+}
+
+.menu-lateral.direito a{
+  background: url(../img/angle-right-svgrepo-com.svg) no-repeat center/cover;
+}
+
+.menu-lateral.esquerdo a{
+  background: url(../img/angle-left-svgrepo-com.svg) no-repeat center/cover;
+}
+
+.menu-lateral a:hover{
+  transform: scale(1.2);
+  opacity: 1;
+}
+
